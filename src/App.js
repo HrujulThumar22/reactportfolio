@@ -4,6 +4,8 @@ import MyCarousel from './components/carousel/carousel'
 import TitleMessage from './components/titleMesssage/titlemessage'
 import About from './pages/about/about'
 import Skills from './pages/skills/skills'
+import Experience from './pages/experience/experience'
+import TimeLine from './pages/timeline/timeline'
 
 import Fade from 'react-reveal'
 import Slide from 'react-reveal'
@@ -34,6 +36,21 @@ const App=()=> {
         <Slide bottom duration={500}>
           <hr />
           <Skills />
+        </Slide>
+      </Container>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+
+            <Experience />
+          </Fade>
+        </Container>
+      </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <TimeLine />
         </Slide>
       </Container>
       My Portfolio

@@ -4,17 +4,14 @@ import MyCarousel from './components/carousel/carousel'
 import TitleMessage from './components/titleMesssage/titlemessage'
 import About from './pages/about/about'
 import Skills from './pages/skills/skills'
-import Experience from './pages/experience/experience'
+import Education from './pages/education/education'
 import TimeLine from './pages/timeline/timeline'
-import ContactForm from './pages/contact/contact'
+import ContactForm from "./pages/contact/contact"
 import FooterPanel from './components/footer/footer'
 //import {particlesOptions} from './particlesOptions'
 
 import Fade from 'react-reveal'
 import Slide from 'react-reveal'
-import bg from "./assets/img/parallex/background.webp"
-import Container from "react-bootstrap/Container";
-import { Parallax } from "react-parallax";
 //import Particles from 'react-particles-js';
 const App=()=> {
   return (
@@ -26,46 +23,33 @@ const App=()=> {
         className="particles particles-box"
         params={particlesOptions}></Particles> */}
       <div>
-      <Parallax
-          blur={{ min: -30, max: 30 }}
-          bgImage={bg}
-          bgImageAlt=""
-          strength={-200}
-        >
-          <Container className="container-box rounded">
-              <Fade duration={500}>
-                <About />
-              </Fade>
-            </Container>
-        </Parallax>
+          <Fade duration={500}>
+          <hr />
+            <About />
+          </Fade>
       </div>
-      <Container className="container-box rounded">
         <Slide bottom duration={500}>
           <hr />
           <Skills />
         </Slide>
-      </Container>
       <div>
-        <Container className="container-box rounded">
           <Fade duration={500}>
             <hr />
-
-            <Experience />
+            <Education />
           </Fade>
-        </Container>
       </div>
-      <Container className="container-box rounded">
+      <div>
         <Slide bottom duration={500}>
           <hr />
           <TimeLine />
         </Slide>
-      </Container>
-      <Container className="container-box rounded">
+      </div>
+      <div>
         <Fade duration={500}>
           <hr />
           <ContactForm />
         </Fade>
-      </Container>
+        </div>
       <hr />
       <FooterPanel />
     </div>

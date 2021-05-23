@@ -4,11 +4,10 @@ import styled from "styled-components";
 
 const MyTitleMessage = styled.h1`
   position: absolute;
-  width: 100%;
-  top: 22rem;
+  width: 50%;
+  top: 10rem;
   z-index: 1;
-  margin-top: -125px;
-  text-align: center;
+  margin-left:15%;
   strong {
     font-size: 1.25em;
   }
@@ -31,7 +30,7 @@ const TitleMessage = () => (
   <MyTitleMessage>
     <div className="titleMessage">
       <div className="heading">
-        <div className="main text-center mb-3">
+        <div className="main mb-3">
           Hi, I am
           <br />
           <span>
@@ -41,7 +40,7 @@ const TitleMessage = () => (
         <div className="sub">
           <Typewriter
             options={{
-              strings: ["Web Developer", "Coach", "Learner"],
+              strings: ["UnderGrad Student","B. Tech Computer Science and Engineering","Upcoming summer intern at Deuteche bank."],
               autoStart: true,
               loop: true,
               delay: 50

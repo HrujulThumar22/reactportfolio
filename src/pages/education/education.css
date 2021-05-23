@@ -1,0 +1,23 @@
+#education{
+  background-color:#FFF;
+}
+.img-resize {
+    width: 10em;
+  }
+  .style {
+    font-size: 20px;
+  }
+  
+.bg {
+  background-image: linear-gradient(
+    -225deg,
+    teal 0%,
+    crimson 48%,
+    crimson 100%
+  );
+  }
+  
+  .body-title-style {
+    font-size: 25px;
+    font-weight: 800;
+  }
